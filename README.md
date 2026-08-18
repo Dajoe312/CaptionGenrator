@@ -9,7 +9,6 @@ This repository contains an end-to-end multimodal deep learning project for gene
 - [Arabic Text Preprocessing](#arabic-text-preprocessing)
 - [Requirements](#requirements)
 - [Evaluation Metrics](#evaluation-metrics)
-- [Usage](#usage)
 
 ## Overview
 Image captioning requires an AI to understand both visual contexts and sequential text generation. This project extracts visual features from images using a pre-trained **VGG16** model and processes corresponding Arabic text sequences using an **LSTM** network. The two components are then merged into a decoder network that predicts the next word in a sequence to generate a complete, coherent Arabic caption.
@@ -43,7 +42,9 @@ Ensure you have the following libraries installed:
 - tqdm
 - matplotlib
 - Pillow (PIL)
-#evaluation-metrics
+
+## Evaluation Metrics
+
 
 The image captioning model — a VGG16 encoder paired with an LSTM decoder, trained on the Flickr8k dataset with Arabic captions — was evaluated at two training checkpoints: 20 epochs (Model 1) and 40 epochs (Model 2), using BLEU and ROUGE metrics against held-out test captions.
 

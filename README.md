@@ -43,3 +43,15 @@ Ensure you have the following libraries installed:
 - tqdm
 - matplotlib
 - Pillow (PIL)
+#evaluation-metrics
+
+The image captioning model — a VGG16 encoder paired with an LSTM decoder, trained on the Flickr8k dataset with Arabic captions — was evaluated at two training checkpoints: 20 epochs (Model 1) and 40 epochs (Model 2), using BLEU and ROUGE metrics against held-out test captions.
+
+| Metric | Model 1 (20 epochs) | Model 2 (40 epochs) |
+|---|---|---|
+| BLEU-1 | 0.4447 | 0.4375 |
+| BLEU-2 | 0.2535 | 0.2363 |
+| ROUGE-1 F1 | 0.4973 | 0.4994 |
+| ROUGE-2 F1 | 0.3294 | 0.3326 |
+| ROUGE-1 Recall | 0.3312 | 0.3328 |
+| ROUGE Precision (1/2/L) | ~1.00 | ~1.00 |
